@@ -2,12 +2,12 @@
     "name": "velber/whats-new-in-php",
     "authors": [
         {
-            "name": "vova",
+            "name": "Volodymyr",
             "email": "wolodymyr.ch@gmail.com"
         }
     ],
     "require": {
-        "php": "^8.2"
+        "php": "^8.5"
     },
     "autoload": {
         "psr-4": {

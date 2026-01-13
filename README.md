@@ -10,11 +10,23 @@ This is a simple handbook of new features and updates of php with examples, grou
 - Run `docker build -t whats-new-in-php .` command to build a container.
 - Then run the container via `docker run -dp 8000:8000 -w /app -v "$(pwd):/app" whats-new-in-php`.
 
+## [PHP 8.3](app/php_versions/8_3.php)
+*23 November 2023*
+
+https://www.php.net/releases/8.3/en.php
+https://www.php.net/manual/en/migration83.php
+
+1. Typed class constants.
+2. Dynamic class constant fetch.
+3. New `#[\Override]` attribute.
+4. Deep-cloning of readonly properties.
+5. New `json_validate()` function.
+6. New Randomizer methods `getBytesFromString(), getFloat(), nextFloat()`.
+
 ## [PHP 8.2](app/php_versions/8_2.php)
 *08 December 2022*
 
 https://www.php.net/releases/8.2/en.php
-
 https://www.php.net/manual/en/migration82.php
 
 1. Readonly classes. Marking a class as readonly will add the readonly modifier to every declared property.
@@ -29,7 +41,6 @@ https://www.php.net/manual/en/migration82.php
 *25 November 2021*
 
 https://www.php.net/releases/8.1/en.php
-
 https://www.php.net/manual/en/migration81.php
 
 1. Enumerations. Use enum instead of a set of constants and get validation out of the box.
@@ -48,7 +59,6 @@ https://www.php.net/manual/en/migration81.php
 *26 November 2020*
 
 https://www.php.net/releases/8.0/en.php
-
 https://www.php.net/manual/en/migration80.new-features.php
 
 1. Named arguments
