@@ -5,8 +5,6 @@ use Random\IntervalBoundary;
 
 echo '<pre>';
 echo '<h1>PHP 8.3</h1>';
-// https://www.php.net/releases/8.3/en.php
-// https://www.php.net/manual/en/migration83.php
 
 /**
  * Typed class constants.
@@ -26,8 +24,8 @@ class Foo implements I {
     // const array VERSION = [];
 }
 
-echo I::VERSION . '<br>';
-echo Foo::VERSION . '<br>';
+echo I::VERSION . HTML_EOL;
+echo Foo::VERSION . HTML_EOL;
 var_dump(Foo::VERSIONS);
 
 

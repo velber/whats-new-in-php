@@ -10,6 +10,24 @@ This is a simple handbook of new features and updates of php with examples, grou
 - Run `docker build -t whats-new-in-php .` command to build a container.
 - Then run the container via `docker run -dp 8000:8000 -w /app -v "$(pwd):/app" whats-new-in-php`.
 
+## [PHP 8.4](app/php_versions/8_4.php)
+*21 November 2024*
+
+https://www.php.net/releases/8.4/en.php
+
+https://www.php.net/manual/en/migration84.php
+
+1. Property hooks. Object properties may now have additional logic associated with their get and set operations.
+2. Asymmetric Visibility. Object properties may now have their set visibility controlled separately from the get visibility.
+3. `#[\Deprecated]` Attribute.
+4. New `array_*()` functions array_find(), array_find_key(), array_any(), and array_all() are available.
+5. `new MyClass()->method()` without parenthesesPDO driver specific subclasses.
+6. New ext-dom features and HTML5 support.
+7. Object API for BCMath. New `Number` object enables object-oriented usage and standard mathematical operators.
+8. PDO driver specific subclasses. Allows to create new MySQL functions (for select function...) for DB connection objects.
+9. Lazy Objects. It is now possible to create objects whose initialization is deferred until they are accessed.
+10. New funciton `request_parse_body()`.
+
 ## [PHP 8.3](app/php_versions/8_3.php)
 *23 November 2023*
 
@@ -20,9 +38,9 @@ https://www.php.net/manual/en/migration83.php
 1. Typed class constants.
 2. Dynamic class constant fetch.
 3. New `#[\Override]` attribute.
-4. Deep-cloning of readonly properties.
-5. New `json_validate()` function.
-6. New Randomizer methods `getBytesFromString(), getFloat(), nextFloat()`.
+4. New `json_validate()` function.
+5. New Randomizer methods `getBytesFromString(), getFloat(), nextFloat()`.
+6. Deep-cloning of readonly properties.
 
 ## [PHP 8.2](app/php_versions/8_2.php)
 *08 December 2022*
