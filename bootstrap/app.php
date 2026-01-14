@@ -25,3 +25,4 @@ require 'app/php_versions' . DIRECTORY_SEPARATOR . str_replace('.', '_', PHP_VER
 
 // TODO
 //  - show info from readme at home page
+//  - add group new features by type and meaning, not only by version

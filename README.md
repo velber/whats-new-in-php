@@ -19,13 +19,13 @@ https://www.php.net/releases/8.5/uk.php
 https://www.php.net/manual/en/migration85.php
 
 1. URI Extension. The new always-available URI extension provides APIs to securely parse and modify URIs and URLs.
-2. Pipe Operator. Instead nested function calls.
+2. Pipe Operator. Instead nested function calls. `$result = "Hello World" |> strlen(...);`.
 3. Clone With. The new clone with keyword allows you to clone an object and override some of its properties.
 4. #[\NoDiscard] Attribute (Without throwing away). PHP checks whether the returned value is consumed and emit (throw) a warning if it is not.
-5. `array_first()` and `array_last()` functions
-6. Casts in constant expressions. `const T1_V = (int) 1.0;`
+5. `array_first()` and `array_last()` functions.
+6. Casts in constant expressions. `const T1_V = (int) 1.0;`.
 7. Closures and First-Class Callables in Constant Expressions.
-8. Persistent `cURL` Share Handles
+8. Persistent `cURL` Share Handles.
 
 ## [PHP 8.4](app/php_versions/8_4.php)
 *21 November 2024*
