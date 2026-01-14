@@ -304,9 +304,9 @@ var_dump($object->getNumber());  // int(11)
 
 
 /**
- * New funciton request_parse_body().
+ * New request_parse_body() function.
  */
-echo '<hr><h2>New funciton request_parse_body().</h2>';
+echo '<hr><h2>New request_parse_body() function.</h2>';
 // for Post request, Content-Type application/x-www-form-urlencoded or multipart/form-data
 // for get request - Fatal error: Uncaught RequestParseBodyException: Request does not provide a content type
 // var_dump(request_parse_body());

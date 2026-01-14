@@ -12,6 +12,7 @@ define('PHP_VERSIOINS', [
     '8.2',
     '8.3',
     '8.4',
+    '8.5',
 ]);
 
-define('HTML_EOL', '<br>');
+const HTML_EOL = '<br>';

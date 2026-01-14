@@ -10,6 +10,23 @@ This is a simple handbook of new features and updates of php with examples, grou
 - Run `docker build -t whats-new-in-php .` command to build a container.
 - Then run the container via `docker run -dp 8000:8000 -w /app -v "$(pwd):/app" whats-new-in-php`.
 
+
+## [PHP 8.5](app/php_versions/8_5.php)
+*20 November 2025*
+
+https://www.php.net/releases/8.5/uk.php
+
+https://www.php.net/manual/en/migration85.php
+
+1. URI Extension. The new always-available URI extension provides APIs to securely parse and modify URIs and URLs.
+2. Pipe Operator. Instead nested function calls.
+3. Clone With. The new clone with keyword allows you to clone an object and override some of its properties.
+4. #[\NoDiscard] Attribute (Without throwing away). PHP checks whether the returned value is consumed and emit (throw) a warning if it is not.
+5. `array_first()` and `array_last()` functions
+6. Casts in constant expressions. `const T1_V = (int) 1.0;`
+7. Closures and First-Class Callables in Constant Expressions.
+8. Persistent `cURL` Share Handles
+
 ## [PHP 8.4](app/php_versions/8_4.php)
 *21 November 2024*
 
@@ -26,7 +43,7 @@ https://www.php.net/manual/en/migration84.php
 7. Object API for BCMath. New `Number` object enables object-oriented usage and standard mathematical operators.
 8. PDO driver specific subclasses. Allows to create new MySQL functions (for select function...) for DB connection objects.
 9. Lazy Objects. It is now possible to create objects whose initialization is deferred until they are accessed.
-10. New funciton `request_parse_body()`.
+10. New `request_parse_body()` function. Not for __GET__ requests.
 
 ## [PHP 8.3](app/php_versions/8_3.php)
 *23 November 2023*
