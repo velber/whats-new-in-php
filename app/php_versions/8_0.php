@@ -72,7 +72,7 @@ var_dump($number);
 
 
 /**
- * Match expression
+ * Match expression https://www.php.net/manual/uk/control-structures.match.php
  * The new match is similar to switch and has the following features:
  *  - Match is an expression, meaning its result can be stored in a variable or returned.
  *  - Match branches only support single-line expressions and do not need a break; statement.
@@ -81,21 +81,25 @@ var_dump($number);
 echo '<hr><h2>Match expression</h2>';
 
 // PHP 7
-switch (8.0) {
+//$result = 'Result';
+switch (8) {
     case '8.0':
         $result = "Oh no!";
         break;
     case 8.0:
         $result = "This is what I expected";
         break;
+    // Default is not required
+    // but if not match - Warning:  Undefined variable $result in ...
 }
-echo $result; //> Oh no!
+echo $result . HTML_EOL; //> Oh no!
 
 echo match (8.0) {
     '8.0' => "Oh no!",
     8.0 => "This is what I expected",
 };
-//> This is what I expected
+// > This is what I expected
+// > but if not match (28.0) - Fatal error: Uncaught UnhandledMatchError: Unhandled match case 28.0 in...
 
 $a = '14a';
 $b = match ($a) {
@@ -103,8 +107,18 @@ $b = match ($a) {
     '14' => 'bbbbbbb',
     default => 2222,
 };
-var_dump($b);
+echo HTML_EOL . $b; // 2222
 
+// it is possible to check 'true'
+// also possible using compare operators or other conditions, may contain multiple conditions separated by comma
+$e = new Exception();
+$res = match(true) {
+    4, 5, 6 => 10 + 1,
+    $e instanceof Exception => 1 + 1,
+    // $e instanceof AuthorizationException => response()->json(['message' => $e->getMessage()], 403),
+    default => 1 + 2,
+};
+echo HTML_EOL . $res; // 2
 
 /**
  * Nullsafe operator
