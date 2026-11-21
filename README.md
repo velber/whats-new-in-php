@@ -206,3 +206,7 @@ https://www.php.net/manual/en/migration70.new-features.php#migration70.new-featu
 https://www.php.net/manual/en/migration56.new-features.php#migration56.new-features.splat
 1. Variadic functions via ...
 2. Argument unpacking via ...
+
+## TO DO
+- Use some documentation package. It should support menu with dropdowns, `md` format.
+- Change structure of features. Every feature should be located it dedicated file, features of a version should locate in one folder.
