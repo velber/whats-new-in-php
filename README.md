@@ -10,6 +10,23 @@ This is a simple handbook of new features and updates of php with examples, grou
 - Run `docker build -t whats-new-in-php .` command to build a container.
 - Then run the container via `docker run -dp 8000:8000 -w /app -v "$(pwd):/app" whats-new-in-php`.
 
+## [PHP 8.6](app/php_versions/8_6.php)
+*19 November 2026*
+
+https://www.php.net/releases/8.6/en.php
+
+https://www.php.net/manual/en/migration86.php
+
+1. Partial Function Application.
+2. New `\Time\Duratioin` Class.
+3. Polling API.
+4. New `clamp()` Function.
+5. New `SortDirection` Enum.
+6. Readonly Property Defaults.
+7. Stream Error Handling.
+8. DocComments for Function Parameters.
+9. New `ReflectionProperty::isReadable()` and `ReflectionProperty::isWritable()` Methods.
+
 
 ## [PHP 8.5](app/php_versions/8_5.php)
 *20 November 2025*
