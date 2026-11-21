@@ -7,7 +7,7 @@
         }
     ],
     "require": {
-        "php": "^8.5"
+        "php": "^8.6"
     },
     "autoload": {
         "psr-4": {
