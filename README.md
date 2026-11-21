@@ -18,7 +18,7 @@ https://www.php.net/releases/8.6/en.php
 https://www.php.net/manual/en/migration86.php
 
 1. [Partial Function Application](https://www.php.net/manual/en/functions.partial-application.php).
-2. New `\Time\Duratioin` Class.
+2. [New `\Time\Duratioin` Class](https://www.php.net/manual/en/class.time-duration.php).
 3. Polling API.
 4. New `clamp()` Function.
 5. New `SortDirection` Enum.
@@ -227,4 +227,4 @@ https://www.php.net/manual/en/migration56.new-features.php#migration56.new-featu
 ## TO DO
 - Use some documentation package. It should support menu with dropdowns, `md` format.
 - Change structure of features. Every feature should be located it dedicated file, features of a version should locate in one folder. Adjust routers as well.
-- Ability to group features by a tag or topic. For example - new functions, classes, array functions, typed arguments.
+- Ability to group features by a tag, type and meaning or topic, not only by version. For example - new functions, classes, array functions, typed arguments.

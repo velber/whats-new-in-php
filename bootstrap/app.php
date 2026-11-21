@@ -14,15 +14,20 @@ if (! isset($_GET['v'])) {
 }
 
 $versionKey = array_search($_GET['v'], PHP_VERSIOINS);
-// exit if version doesn't supported
+// exit if version doesn't support
 if (false === $versionKey) {
     http_response_code(404);
     exit('404 Not Found');
 }
 
-// show examples of specified PHP version
-require 'app/php_versions' . DIRECTORY_SEPARATOR . str_replace('.', '_', PHP_VERSIOINS[$versionKey]) . '.php';
+// show examples/list of features specified PHP version
+require 'app/views' . DIRECTORY_SEPARATOR . str_replace('.', '_', PHP_VERSIOINS[$versionKey]) . '.php';
 
-// TODO
-//  - show info from readme at home page
-//  - add group new features by type and meaning, not only by version
+// show selected feature example
+if (isset($_GET['feature'])) {
+    require sprintf(
+        "app/views/features/%s/%s.php",
+        str_replace('.', '_', PHP_VERSIOINS[$versionKey]),
+        $_GET['feature']
+    );
+}
