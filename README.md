@@ -21,8 +21,8 @@ https://www.php.net/manual/en/migration86.php
 2. [New `\Time\Duratioin` Class](https://www.php.net/manual/en/class.time-duration.php).
 3. [Polling API](https://wiki.php.net/rfc/poll_api).
 4. [New `clamp()` Function](https://www.php.net/manual/en/function.clamp.php).
-5. New `SortDirection` Enum.
-6. Readonly Property Defaults.
+5. [New `SortDirection` Enum](https://www.php.net/manual/en/enum.sortdirection.php). [The PHP Foundation's blog](https://thephp.foundation/blog/2026/11/03/stdlib-investment/).
+6. [Readonly Property Defaults](https://www.php.net/manual/en/language.oop5.properties.php#language.oop5.properties.readonly-properties).
 7. Stream Error Handling.
 8. DocComments for Function Parameters.
 9. New `ReflectionProperty::isReadable()` and `ReflectionProperty::isWritable()` Methods.
@@ -40,9 +40,9 @@ https://www.php.net/manual/en/migration85.php
 3. Clone With. The new clone with keyword allows you to clone an object and override some of its properties.
 4. #[\NoDiscard] Attribute (Without throwing away). PHP checks whether the returned value is consumed and emit (throw) a warning if it is not.
 5. `array_first()` and `array_last()` functions.
-6. Casts in constant expressions. `const T1_V = (int) 1.0;`.
-7. Closures and First-Class Callables in Constant Expressions.
-8. Persistent `cURL` Share Handles.
+6. Closures and First-Class Callables in Constant Expressions.
+7. Persistent `cURL` Share Handles.
+8. Casts in constant expressions. `const T1_V = (int) 1.0;`.
 
 ## [PHP 8.4](app/php_versions/8_4.php)
 *21 November 2024*
@@ -55,7 +55,7 @@ https://www.php.net/manual/en/migration84.php
 2. Asymmetric Visibility. Object properties may now have their set visibility controlled separately from the get visibility.
 3. `#[\Deprecated]` Attribute.
 4. New `array_*()` functions array_find(), array_find_key(), array_any(), and array_all() are available.
-5. `new MyClass()->method()` without parenthesesPDO driver specific subclasses.
+5. `new MyClass()->method()` without parentheses.
 6. New ext-dom features and HTML5 support.
 7. Object API for BCMath. New `Number` object enables object-oriented usage and standard mathematical operators.
 8. PDO driver specific subclasses. Allows to create new MySQL functions (for select function...) for DB connection objects.
