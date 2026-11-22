@@ -19,8 +19,8 @@ https://www.php.net/manual/en/migration86.php
 
 1. [Partial Function Application](https://www.php.net/manual/en/functions.partial-application.php).
 2. [New `\Time\Duratioin` Class](https://www.php.net/manual/en/class.time-duration.php).
-3. Polling API.
-4. New `clamp()` Function.
+3. [Polling API](https://wiki.php.net/rfc/poll_api).
+4. [New `clamp()` Function](https://www.php.net/manual/en/function.clamp.php).
 5. New `SortDirection` Enum.
 6. Readonly Property Defaults.
 7. Stream Error Handling.
