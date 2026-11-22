@@ -10,7 +10,7 @@ This is a simple handbook of new features and updates of php with examples, grou
 - Run `docker build -t whats-new-in-php .` command to build a container.
 - Then run the container via `docker run -dp 8000:8000 -w /app -v "$(pwd):/app" whats-new-in-php`.
 
-## [PHP 8.6](app/php_versions/8_6.php)
+## [PHP 8.6](app/views/8_6.php)
 *19 November 2026*
 
 https://www.php.net/releases/8.6/en.php
@@ -28,7 +28,7 @@ https://www.php.net/manual/en/migration86.php
 9. New `ReflectionProperty::isReadable()` and `ReflectionProperty::isWritable()` Methods.
 
 
-## [PHP 8.5](app/php_versions/8_5.php)
+## [PHP 8.5](app/views/8_5.php)
 *20 November 2025*
 
 https://www.php.net/releases/8.5/uk.php
@@ -44,7 +44,7 @@ https://www.php.net/manual/en/migration85.php
 7. Persistent `cURL` Share Handles.
 8. Casts in constant expressions. `const T1_V = (int) 1.0;`.
 
-## [PHP 8.4](app/php_versions/8_4.php)
+## [PHP 8.4](app/views/8_4.php)
 *21 November 2024*
 
 https://www.php.net/releases/8.4/en.php
@@ -62,7 +62,7 @@ https://www.php.net/manual/en/migration84.php
 9. Lazy Objects. It is now possible to create objects whose initialization is deferred until they are accessed.
 10. New `request_parse_body()` function. Not for __GET__ requests.
 
-## [PHP 8.3](app/php_versions/8_3.php)
+## [PHP 8.3](app/views/8_3.php)
 *23 November 2023*
 
 https://www.php.net/releases/8.3/en.php
@@ -76,7 +76,7 @@ https://www.php.net/manual/en/migration83.php
 5. New Randomizer methods `getBytesFromString(), getFloat(), nextFloat()`.
 6. Deep-cloning of readonly properties.
 
-## [PHP 8.2](app/php_versions/8_2.php)
+## [PHP 8.2](app/views/8_2.php)
 *08 December 2022*
 
 https://www.php.net/releases/8.2/en.php
@@ -91,7 +91,7 @@ https://www.php.net/manual/en/migration82.php
 6. Deprecate dynamic properties. The creation of dynamic properties is deprecated to help avoid mistakes and typos, unless the class opts in by using the `#[\AllowDynamicProperties]` attribute. `stdClass` allows dynamic properties. Usage of the `__get`/`__set` magic methods is not affected by this change.
 
 
-## [PHP 8.1](app/php_versions/8_1.php)
+## [PHP 8.1](app/views/8_1.php)
 *25 November 2021*
 
 https://www.php.net/releases/8.1/en.php
@@ -110,7 +110,7 @@ https://www.php.net/manual/en/migration81.php
 10. Array unpacking support for string-keyed arrays. PHP supported unpacking inside arrays through the spread operator before, but only if the arrays had integer keys. Now it is possible to unpack arrays with string keys too.
 
 
-## [PHP 8.0](app/php_versions/8_0.php)
+## [PHP 8.0](app/views/8_0.php)
 *26 November 2020*
 
 https://www.php.net/releases/8.0/en.php
@@ -145,7 +145,7 @@ https://www.php.net/manual/en/migration80.new-features.php
 
 
 
-## [PHP 7.4](app/php_versions/7_4.php)
+## [PHP 7.4](app/views/7_4.php)
 *28 November 2019*
 
 https://www.php.net/manual/en/migration74.new-features.php
@@ -162,7 +162,7 @@ test(1, 2, 3);`
 7. Weak References
 8. Preloading
 
-## [PHP 7.3](app/php_versions/7_3.php)
+## [PHP 7.3](app/views/7_3.php)
 *6 December 2018*
 
 https://www.php.net/manual/en/migration73.new-features.php
@@ -178,7 +178,7 @@ https://www.php.net/manual/en/migration73.new-features.php
   - Deprecate case-insensitive constants
   - Deprecate FILTER_FLAG_SCHEME_REQUIRED and FILTER_FLAG_HOST_REQUIRED flags used with FILTER_VALIDATE_URL
 
-## [PHP 7.2](app/php_versions/7_2.php)
+## [PHP 7.2](app/views/7_2.php)
 *30 November 2017*
 
 https://www.php.net/manual/en/migration72.new-features.php
@@ -188,7 +188,7 @@ https://www.php.net/manual/en/migration72.new-features.php
 3. Abstract method overriding
 4. Parameter type widening
 
-## [PHP 7.1](app/php_versions/7_1.php)
+## [PHP 7.1](app/views/7_1.php)
 *1 December 2016*
 
 https://www.php.net/manual/en/migration71.new-features.php
@@ -202,7 +202,7 @@ https://www.php.net/manual/en/migration71.new-features.php
 7. Support for keys in list()
 8. Support for negative string offsets
 
-## [PHP 7.0](app/php_versions/7_0.php)
+## [PHP 7.0](app/views/7_0.php)
 *3 December 2015*
 
 https://www.php.net/manual/en/migration70.new-features.php#migration70.new-features.scalar-type-declarations
@@ -217,7 +217,7 @@ https://www.php.net/manual/en/migration70.new-features.php#migration70.new-featu
 8. Constant arrays using define()
 9. IntlChar
 
-## [PHP 5.6](app/php_versions/5_6.php)
+## [PHP 5.6](app/views/5_6.php)
 *28 August 2014*
 
 https://www.php.net/manual/en/migration56.new-features.php#migration56.new-features.splat
